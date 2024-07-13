@@ -1,0 +1,25 @@
+class Blog
+	Attributes:
+		Entries List
+		Header
+		Intro/Description
+		URL?
+	
+	Funcs:
+		New Entry(__init__)
+			call BlogEntry obj
+		Query
+		Query All
+			call Query func
+	
+class BlogEntry
+	Attributes:
+		Date
+		Time
+		Title
+		Text
+		Entry Summary (scrape X amount of chars + ...)	
+
+	Funcs:
+		Edit Entry
+		Delete Entry

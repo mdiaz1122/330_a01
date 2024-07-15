@@ -49,14 +49,8 @@ class BlogPost:
         self.title = title          # The title of the blog entry.
         self.body = text            # The blog entry text.
 
-    def __newEntry(self, date: int, time: int, title: str, text: str) -> dict:
+    def __newEntry(self) -> dict:
         """Creates new blog post.
-
-        Args:
-            date: Date of blog entry creation.
-            time: Time of blog entry creation.
-            title: Blog entry title.
-            text: Main text of the blog entry.
 
         Returns:
             A dictionary containing the text of the blog entry as well as the date,
@@ -64,14 +58,11 @@ class BlogPost:
         """
 
         # Define dictionary for blog post and populate self.body with blog entry text
-        # Return dictionary
+        # Return dictionary with blog post text and other data to be added to post list.
         pass
 
-    def updateEntry(self, title: str) -> dict:
+    def updateEntry(self) -> dict:
         """Updates an existing blog entry.
-
-        Args:
-            title: Title of blog post user wants to read.
 
         Returns:
             A dictionary containing the text of the blog entry as well as the date,
